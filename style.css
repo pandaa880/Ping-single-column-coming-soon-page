@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Libre Franklin', sans-serif;
+  --primary-blue: hsl(223, 87%, 63%);
+  --primary-white: #fff;
+  --primary-black: #000;
+  --secondary-pale-blue: hsl(223, 100%, 88%);
+  --secondary-light-red: hsl(354, 100%, 66%);
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutral-dark-blue: hsl(209, 33%, 12%);
+  --mobile-breakpoint: 375px;
+  --desktop-breakpoint: 1440px; 
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-white);
+  font-family: var(--font-family);
+}
+
+.header {
+  padding: 50px 0 0 0;
+  margin: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 2% 5%;
+  background-color: var(--primary-white);
+}
+
+.launch-title {
+  font-size: 25px;
+  font-weight: 300;
+  color: var(--neutral-gray);
+  text-align: center;
+}
+
+.launch-title .special-word {
+  font-weight: 700;
+  color: var(--primary-black);
+}
+
+.subscribe-msg {
+  text-align: center;
+}
+
+.notify-container {
+  margin: 40px 0 0 0;
+}
+
+.notify-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input-box {
+  /* margin: 0 0 10px 0; */
+  padding: 10px 10px 10px 30px;
+  border: 1px solid var(--secondary-pale-blue);
+  border-radius: 20px;
+  width: 100%;
+  outline: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--primary-black);
+}
+
+.email-input-box::placeholder {
+  font-weight: 300;
+  color: var(--secondary-pale-blue);
+}
+
+.email-input-box:focus {
+  outline: 1px solid transparent;
+}
+
+.email-invalid {
+  border: 1px solid var(--secondary-light-red);
+}
+
+.error-msg {
+  display: block;
+  margin: 5px 0;
+  padding: 5px 10px 20px 30px;
+  width: 100%;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--secondary-light-red);
+  text-align: center;
+}
+
+.notify-button {
+  margin: 0 0 40px 0;
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid var(--primary-blue);
+  border-radius: 20px;
+  box-shadow: 1px 2px 5px #bfbfbf;
+  outline: 1px solid transparent;
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+  font-size: 14px;
+  text-align: center;
+}
+
+.illustration-container {
+  margin: 40px 0 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-illustration {
+  width: 100%;
+  height: auto;
+}
+
+.copyright-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  margin: 0 5px 30px 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--secondary-pale-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-blue);
+}
+
+.copyright-text {
+  font-size: 12px;
+  color: var(--neutral-gray);
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media(min-width: 768px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-container {
+    max-width: 80%;
+    width: 100%;
+  }
+
+  .notify-container {
+    margin: 40px 0 100px 0;
+  }
+
+  .notify-container form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .email-input-box-container {
+    margin: 0 10px 0 0;
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email-input-box {
+    /* flex: 1 1 60%; */
+    margin: 0;
+  }
+
+  .error-msg {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .notify-button {
+    margin: 0;
+    flex: 1 1 20%;
+  }
+
+  .illustration-container {
+    margin-top: 0;
+  }
+
+  .attribution {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media(min-width: 1024px) {
+  .main-container {
+    max-width: 768px;
+    width: 100%;
+  }
+}
