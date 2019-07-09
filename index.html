@@ -13,22 +13,51 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="main-container">
+    <header class="header">
+      <img src="./images/logo.svg" alt="PING Logo" class="logo">
+    </header>
+    <main class="main">
+      <h2 class="launch-title">We are launching <span class="special-word">soon!</span></h2>
 
-  We are launching soon!
+      <p class="subscribe-msg">Subscribe and get notified</p>
 
-  Subscribe and get notified
+      <div class="notify-container">
+        <form action="" id="emailSubmitForm" novalidate>
+          <div class="email-input-box-container">
+            <input type="email" name="email" id="email" class="email-input-box" placeholder="Your email address...">
+            <span class="error-msg"></span>
+          </div>
+          <button type="submit" id="emailSubmitButton" class="notify-button">Notify Me</button> 
+        </form>
+      </div>
 
-  Notify Me
+      <section class="illustration-container">
+        <img src="./images/illustration-dashboard.png" alt="Dashboard Illustration" class="dashboard-illustration">
+      </section>
 
-  &copy; Copyright Ping. All rights reserved.
+    <section class="copyright-container">
+        <div class="social-icons-container">
+          <a href="https://github.com/pandaa880" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/pandaa880" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/pandaa880" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      <p class="copyright-text">&copy; Copyright Ping. All rights reserved.</p>
+    </section>
+    </main>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/pandaa880" target="_blank">Prashant Chaudhari</a>.
+      </p>
+    </footer>
+  </div>
 </body>
+<script src="./script.js"></script>
+<script src="https://kit.fontawesome.com/c67e9df399.js"></script>
 </html>
