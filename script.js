@@ -7,7 +7,7 @@ const errorMessage = document.querySelector('.error-msg');
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // on key press the red colored warning should be gone and user should see the normal input box
-emailInput.addEventListener('keydown', function handleEmailValueChange(event) {
+emailInput.addEventListener('keypress', function handleEmailValueChange(event) {
   // remove the error msg if any
   if (errorMessage.textContent !== "") {
     errorMessage.textContent = "";
